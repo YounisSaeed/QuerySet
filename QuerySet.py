@@ -416,4 +416,6 @@ Question.objects.prefetch_related(Prefetch('choice_set')).all()
 from django.db.models import FilteredRelation, Q
 result_1 = Restaurant.objects.annotate(pizzas_vegetarian=FilteredRelation('pizzas', 
 condition=Q(pizzas__vegetarian=True), ), ).filter(pizzas_vegetarian__name__icontains='mozzarella')
-
+# -----------------------------------------------------------------------------------------
+# -----------------------------------------------------------------------------------------
+# -----------------------------------------------------------------------------------------
